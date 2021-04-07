@@ -189,3 +189,9 @@ def Tableaux(f):
 			clasifica_y_extiende(x, h)
 
 	return listaInterpsVerdaderas
+kjhc vs
+ds
+fz
+df
+F
+
