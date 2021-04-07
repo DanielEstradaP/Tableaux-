@@ -44,7 +44,7 @@ def String2Tree(A):
 	for c in A:
 		# print("Examinando " + str(c))
 		if c in letrasProposicionales:
-			# print(u"El símbolo es letra proposicional")
+			# print("El símbolo es letra proposicional")
 			pila.append(Tree(c, None, None))
 		elif c == '-':
 			# print("Negamos")
@@ -189,3 +189,4 @@ def Tableaux(f):
 			clasifica_y_extiende(x, h)
 
 	return listaInterpsVerdaderas
+
