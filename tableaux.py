@@ -7,7 +7,7 @@ from random import choice
 # Crea los conectivos
 conectivos = ['Y', 'O', '>', '=']
 # Crea las letras minúsculas a-z
-letrasProposicionales = [chr(x) for x in range(97, 123)]
+letrasProposicionales = [chr(x) for x in range(97, 123)]  
 # inicializa la lista de interpretaciones
 listaInterpsVerdaderas = []
 # inicializa la lista de hojas
@@ -101,6 +101,10 @@ def complemento(l):
 	# Esta función devuelve el complemento de un literal
 	# Input: l, un literal
 	# Output: x, un literal
+	if l.label == '-':
+		return Inorder(l.right)
+	elif l.right == None:
+		return Inorder(Tree('-',None,Tree(l.label,None,None)))
 
 	pass
 
@@ -109,6 +113,7 @@ def par_complementario(l):
 	# contiene un par complementario
 	# Input: l, una lista de literales
 	# Output: True/False
+	
 
 	pass
 
@@ -116,6 +121,7 @@ def es_literal(f):
 	# Esta función determina si el árbol f es un literal
 	# Input: f, una fórmula como árbol
 	# Output: True/False
+	
 
 	pass
 
